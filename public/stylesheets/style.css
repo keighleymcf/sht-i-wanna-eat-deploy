@@ -9,7 +9,8 @@ body {
   background-image: linear-gradient(to top, #d00090 15%, #ff7f00 70%);
   margin: 0;
   padding: 15px;
-  height: 100vh; }
+  height: 100vh;
+  background-attachment: fixed; }
 
 #wrapper {
   width: 100%;
@@ -84,7 +85,13 @@ h2 {
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
   font-weight: 900;
-  margin: 50px 0; }
+  margin: 20px 0; }
+
+.title-index p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9); }
 
 .main-page {
   display: flex;
@@ -104,7 +111,6 @@ ul {
 .main-index {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   height: 100vh; }
 

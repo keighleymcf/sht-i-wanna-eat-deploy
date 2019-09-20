@@ -38,20 +38,19 @@ router.get("/search", (req, res, next) => {
 
 /* GET home page */
 router.get("/", (req, res, next) => {
-  const user = req.user;
-  res.render("index", {
-    user
-  });
+  if (req.user) {
+    const user = req.user;
+    res.render("index", { message: "you're logged in!" });
+  } else {
+    res.render("index", {
+      message: "keep track of restaurants you like or want to try"
+    });
+  }
 });
 
 //access map
 router.get("/map", (req, res, next) => {
   res.render("map", { user: req.user });
-});
-
-//access search page to add new stuff
-router.get("/add", (req, res, next) => {
-  res.render("add");
 });
 
 //show user's list of saved restaurants

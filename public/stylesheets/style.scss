@@ -106,7 +106,14 @@ h2 {
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
   font-weight: 900;
-  margin: 50px 0;
+  margin: 20px 0;
+}
+
+.title-index p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .main-page {
@@ -130,7 +137,7 @@ ul {
 .main-index {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
   height: 100vh;
 }
