@@ -78,6 +78,10 @@ h2 {
   color: slategray;
   margin: 5%; }
 
+/*my map*/
+#map a {
+  color: #d00090; }
+
 /*home*/
 .title-text {
   text-align: center;
@@ -91,7 +95,8 @@ h2 {
   margin-top: 20px;
   margin-bottom: 40px;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.9); }
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center; }
 
 .main-page {
   display: flex;
