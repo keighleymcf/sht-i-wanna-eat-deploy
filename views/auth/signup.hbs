@@ -1,0 +1,46 @@
+<div class="main-index">
+  <div class="title-index">
+    <h1 class="title-text">sh*t I wanna eat</h1>
+  </div>
+  <div class="dish">
+    <div class="fork">
+      <img src="/images/fork.png" alt="fork">
+    </div>
+    <div class="plate">
+
+      <div class="contentPlate-log-sign">
+        <h2>Sign Up</h2>
+        <form class="form" action="/auth/signup" method="POST" id="form-container">
+          <label for="username">e-mail</label>
+          <input id="username" type="text" name="username" placeholder="hungry@feedme.com">
+
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" placeholder="your password">
+
+          {{#if message }}
+          <div class="error-message">{{ message }}</div>
+          {{/if}}
+
+          <button class="login-btn">create account</button>
+        </form>
+        <a href="/auth/google"><button class="login-btn">or sign up with Google</button></a>
+
+        <a href="/auth/login">log in</a>
+
+      </div>
+    </div>
+
+    <div class="knife">
+      <img src="/images/knife.png" alt="knife">
+    </div>
+  </div>
+  <div class="goToList">
+    {{#if user}}
+    <h2>
+      <a href="/list">list of my sh*t</a>
+    </h2>
+    {{/if}}
+  </div>
+
+</div>
+</div>
