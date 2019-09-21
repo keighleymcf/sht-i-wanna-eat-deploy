@@ -40,7 +40,7 @@ router.get("/search", (req, res, next) => {
 router.get("/", (req, res, next) => {
   if (req.user) {
     const user = req.user;
-    res.render("index", { message: "you're logged in!" });
+    res.render("index", { user: user, message: "you're logged in!" });
   } else {
     res.render("index", {
       message: "keep track of restaurants you like or want to try"
