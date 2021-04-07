@@ -35,6 +35,9 @@ p {
 a {
   color: azure; }
 
+a:hover {
+  color: inherit; }
+
 h1,
 h2 {
   margin: 20px 0; }
