@@ -1,5 +1,6 @@
 # sh*t I wanna eat
 Keighley McFarland and Noriko Takizawa | Ironhack project 2
+
 Full-stack javascript app with Node.js and Handlebars
 
 ## An app to keep track of restaurants you like or want to try
